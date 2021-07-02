@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Safar: Your comfort drives us! </title>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+
+
+#homepage
+{
+
+  height: 100px;
+}
+
+#reason {
+  height: 25%;
+}
+#help {
+  padding-right:20px;
+}
+.carousel-indicators {
+  bottom:0;
+}
+img {
+  display: block;
+  max-width:500px;
+  max-height:500px;
+  width: auto;
+  height: auto;
+}
+
+input
+{
+  width: 20%;
+}
+
+#form1 {
+  padding: 20px;
+  margin: 0px;
+  height: 450px;
+}
+
+#form2 {
+  height: 470px;
+  padding-top: 100px;
+}
+
+.tree {
+  height: 540px;
+  overflow-y: scroll;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* Create a custom checkbox */
+.checkmarks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmarks {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmarks {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmarks:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmarks:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmarks:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#photo {
+	max-height: 400px;
+	max-width: 250px;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+#adv {
+	border-left: 6px solid white ;
+}
+
+#footer {
+	background-color: #e3f2fd;
+	 height: 50px;
+    font-family: 'Verdana', sans-serif;
+    padding: 20px;
+}
+</style>
+</head>
+<body style="background-color: powderblue;">
+
+<!--navbar-->
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <div class= "navbar-header">
+        <button type= "button" class="navbar-toggle" data-toggle= "collapse" data-tarPOST= "#bs-safar-navbar-collapse-1">
+          <span class= "sr-only"> Toggle navigation </span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+         </button>
+      <a class="navbar-brand" href="#"> Safar </a> 
+    </div>
+  <div class= "collapse navbar-collapse navbar-right" id="bs-safar-navbar-collapse-1">
+    <ul class= "nav navbar-nav">
+        <div class= "collapse navbar-collapse navbar-right" id="bs-safar-navbar-collapse-1">
+    <ul class= "nav navbar-nav">
+      <li> <a href="#"> Home </a> </li>
+      <li> <a href="./about.html"> About </a> </li>
+	  <li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button> </li>
+   
+    <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Login</h4>
+      </div>
+      <div class="modal-body">
+    <form id = "form2" method="post" action="#">
+    <div class="form-group has-feedback">
+    <label for="username">Name:</label>
+    <input type="text" class="form-control" id= "username" placeholder="Username" name="username">
+    <i class="glyphicon glyphicon-map-marker form-control-feedback"></i>
+</div>
+      <div class="form-group has-feedback">
+    <label for="mail">Email id</label>
+    <input type="text" class="form-control" id= "mail" placeholder="mail" name="mail">
+    <i class="glyphicon glyphicon-map-marker form-control-feedback"></i>
+</div>
+<button type="submit" name="login" value="login" class="btn btn-primary">Login</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+   </ul>
+    </div>  
+  </div>
+</nav>
+
+
+<div id="widgetmain" style="text-align:left;overflow-y:auto;overflow-x:hidden;width:750px;background-color:#FFFFFF; border:1px solid #333333;"><div id="rsswidget" style="height:500px;"><iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1580286447166&amp;x=https%3A%2F%2Ftimesofindia.indiatimes.com%2Frssfeeds%2F49896634.cms&amp;w=750&amp;h=500&amp;bc=333333&amp;bw=1&amp;bgc=FFFFFF&amp;m=20&amp;it=true&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=FFFFFF&amp;il=true&amp;lc=0000FF&amp;ls=20&amp;lb=false&amp;id=true&amp;dc=333333&amp;ds=14&amp;idt=true&amp;dtc=284F2D&amp;dts=12" border="0" hspace="0" vspace="0" frameborder="no" marginwidth="0" marginheight="0" style="border:0; padding:0; margin:0; width:750px; height:500px;" id="rssOutput">Reading RSS Feed ...</iframe></div><div style="text-align:right;margin-bottom:0;border-top:1px solid #333333;" id="widgetbottom"><span style="font-size:70%"><a href="http://www.rssfeedwidget.com">rss feed widget</a>&nbsp;</span><br></div></div>
+</body>
