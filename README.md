@@ -10,8 +10,8 @@ Step to Execute:
 7)	In the admin site, type localhost/ShuttleCabmgmtsys to view all the files.
 8)	Click on homepage_safar.php and visit the complete site starting from there.
 
-Pre-requisite: 
-1)	Xampp software.
-2)	A good editing software such as VScode, sublime text, notepad++.
+Dev softwares: 
+1)	Xampp software (for localhost server, phpmyadmin)
+2)	Code editors such as VScode, sublime text, notepad++.
 
 ![screenshot](ShuttleCabmgmtsys/screenshots/ss1.png)
